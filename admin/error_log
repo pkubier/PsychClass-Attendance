@@ -1,0 +1,14 @@
+[31-Aug-2021 09:32:10 America/New_York] PHP Notice:  Undefined variable: con in /home/patrripg/kubierpsychology.com/admin/10688.php on line 20
+[31-Aug-2021 09:32:10 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/patrripg/kubierpsychology.com/admin/10688.php on line 20
+[31-Aug-2021 09:32:10 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/patrripg/kubierpsychology.com/admin/10688.php on line 22
+[31-Aug-2021 09:33:51 America/New_York] PHP Notice:  Undefined variable: con in /home/patrripg/kubierpsychology.com/admin/10688.php on line 20
+[31-Aug-2021 09:33:51 America/New_York] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/patrripg/kubierpsychology.com/admin/10688.php on line 20
+[31-Aug-2021 09:33:51 America/New_York] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, null given in /home/patrripg/kubierpsychology.com/admin/10688.php on line 22
+[31-Aug-2021 09:43:50 America/New_York] PHP Notice:  Undefined index: export_data in /home/patrripg/kubierpsychology.com/admin/download.php on line 3
+[31-Aug-2021 09:43:50 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/patrripg/kubierpsychology.com/admin/download.php on line 8
+[31-Aug-2021 09:46:08 America/New_York] PHP Notice:  Undefined variable: user in /home/patrripg/kubierpsychology.com/admin/delete.php on line 3
+[31-Aug-2021 09:46:08 America/New_York] PHP Notice:  Undefined variable: password in /home/patrripg/kubierpsychology.com/admin/delete.php on line 3
+[31-Aug-2021 09:49:33 America/New_York] PHP Notice:  Undefined index: export_data in /home/patrripg/kubierpsychology.com/admin/download.php on line 3
+[31-Aug-2021 09:49:33 America/New_York] PHP Warning:  Invalid argument supplied for foreach() in /home/patrripg/kubierpsychology.com/admin/download.php on line 8
+[31-Aug-2021 09:49:39 America/New_York] PHP Notice:  Undefined variable: pass in /home/patrripg/kubierpsychology.com/admin/delete.php on line 4
+[31-Aug-2021 09:49:47 America/New_York] PHP Notice:  Undefined variable: pass in /home/patrripg/kubierpsychology.com/admin/delete.php on line 4

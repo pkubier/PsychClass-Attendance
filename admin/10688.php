@@ -1,0 +1,50 @@
+<?php 
+include "db.php";
+?>
+<title>
+CRN 10688
+</title>
+<div class="container">
+ 
+ <form method='post' action='download.php'>
+  <input type='submit' value='Export' name='Export'>
+  
+ 
+  <table border='1' style='border-collapse:collapse;'>
+    <tr>
+     <th>id</th>
+     <th>name</th>
+     <th>seatrow</th>
+     <th>seatcolumn</th>
+     <th>timestamp</th>
+    </tr>
+    <?php 
+     $query = "SELECT * FROM CRN10688 ORDER BY id asc";
+     $result = mysqli_query($con,$query);
+     $user_arr = array();
+     while($row = mysqli_fetch_array($result)){
+      $id = $row['id'];
+      $name = $row['name'];
+      $seatrow = $row['seatrow'];
+      $seatcolumn = $row['seatcolumn'];
+      $timestamp = $row['timestamp'];
+      $user_arr[] = array($id,$name,$seatrow,$seatcolumn,$timestamp);
+   ?>
+      <tr>
+       <td><?php echo $id; ?></td>
+       <td><?php echo $name; ?></td>
+       <td><?php echo $seatrow; ?></td>
+       <td><?php echo $seatcolumn; ?></td>
+       <td><?php echo $timestamp; ?></td>
+      </tr>
+   <?php
+    }
+   ?>
+   </table>
+   <?php 
+    $serialize_user_arr = serialize($user_arr);
+   ?>
+  <textarea name='export_data' style='display: none;'><?php echo $serialize_user_arr; ?></textarea>
+ </form>
+<!--<p style="text-align:center; font-weight:bold; font-size:22px; margin:24px 0 0 0;"><a href="delete.php" style="color:#1cb027; text-decoration:none;">Delete Data</a></p>-->
+</div>

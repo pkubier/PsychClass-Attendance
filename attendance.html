@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Psychology Attendance CRN 10688</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.css">
+    <style type="text/css">
+        .wrapper{
+            width: 500px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="page-header">
+                        <h2>Psychology Attendance<br/> CRN 10688</h2>
+                    </div>
+                    <p>Enter your name and student id to record attendance for today. Falsifying information or entering information for other students
+                        is considered student misconduct and grounds for dismissal or disciplinary action.
+                    </p>
+                    <form action="insert.php" method="post">
+                        <div class="form-group">
+                            <label>First and Last Name</label>
+                            <input type="text" name="name" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label>Student ID</label>
+                            <input type="text" name="id" class="form-control">
+                        </div>
+                        <input type="submit" class="btn btn-primary" name="submit" value="Submit">
+                    </form>
+                </div>
+            </div>        
+        </div>
+    </div>
+</body>
+</html>
